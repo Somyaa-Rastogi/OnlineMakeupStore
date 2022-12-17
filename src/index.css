@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font-family: 'Krona One', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+body {
+    @apply font-base text-dark;
+}
+
+.container-tl{
+    width: 1200px;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-template-areas:
+        'sidebar results'
+        'sidebar results';
+}
+
+.search .sidebar {
+    grid-area: sidebar;
+}
+
+.search .results {
+    grid-area: results;
+}
